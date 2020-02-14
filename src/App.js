@@ -1,11 +1,8 @@
 import React from 'react';
+import Routes from './routes';
 
 function App() {
-  return (
-    <div className="App">
-      <h1>Leonardo Ferreira Alves</h1>
-    </div>
-  );
+  return <Routes />;
 }
 
 export default App;
