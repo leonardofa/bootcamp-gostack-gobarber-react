@@ -14,8 +14,7 @@ export default function Main() {
 
       <Form onSubmit={() => {}}>
         <input type="text" placeholder="Adicionar respositório" />
-
-        <SubmitButton disabled>
+        <SubmitButton>
           <FaPlus color="#FFF" size={14} />
         </SubmitButton>
       </Form>
