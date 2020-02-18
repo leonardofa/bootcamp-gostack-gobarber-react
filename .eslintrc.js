@@ -25,11 +25,16 @@ module.exports = {
     'prettier',
   ],
   rules: {
-    'prettier/prettier':'error',
+    "prettier/prettier":["error", {"singleQuote": true}],
+    "class-methods-use-this": "off",
+    "no-param-reassign": "off",
+    "camelcase": "off",
+    "no-unused-vars": ["error", {"argsIgnorePattern": "next"}],
     'react/jsx-filename-extension': [
       'warn',
       {extensions:['.jsx', '.js']}
     ],
-    'import/prefer-default-export': 'off'
+    'import/prefer-default-export': 'off',
+    'react/state-in-constructor': 'off',
   },
 };
