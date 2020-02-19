@@ -1,14 +1,8 @@
 import React, { Component } from 'react';
 import api from '../../services/api';
 
-// import { Container } from './styles';
-
 export default class Repository extends Component {
-  state = {
-    repository: {},
-    issues: [],
-    loading: true,
-  };
+  state = { repository: '', issues: '', loading: true };
 
   async componentDidMount() {
     const { match } = this.props;
@@ -25,19 +19,16 @@ export default class Repository extends Component {
       }),
     ]);
 
-    this.setState({
-      repository: repository.data,
-      issues: issues.data,
-      loading: false,
-    });
+    this.setState({ repository: repository.data, issues: issues.data });
   }
 
   render() {
-    const { respository, issues } = this.state;
+    const { repository, issues, loading } = this.state;
     return (
       <>
-        <h1>Repository: {respository}</h1>
+        <h1>Repository: {repository}</h1>
         <h1>Issues: {issues}</h1>
+        <h1>Loading: {loading}</h1>
       </>
     );
   }
