@@ -30,4 +30,11 @@ module.exports = {
     'react/jsx-filename-extension': ['error', { extensions: ['.jsx', '.js'] }],
     'no-console': ['error', { allow: ['tron'] }],
   },
+  settings: {
+    "import/resolver": {
+      "babel-plugin-root-import": {
+        rootPathSuffix: 'src',
+      }
+    },
+  },
 };
