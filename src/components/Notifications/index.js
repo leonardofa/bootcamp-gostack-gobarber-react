@@ -58,7 +58,10 @@ export default function Notifications() {
       <Badge onClick={() => handleToggleVisible()} hasUnread={hasUnread}>
         <MdNotifications color="#7159c1" size={20} />
       </Badge>
-      <NotificationList visible={visible}>
+      <NotificationList
+        visible={visible}
+        onMouseLeave={() => handleToggleVisible()}
+      >
         <Scroll>
           {notifications.map(notification => (
             <Notification key={notification._id} unread={!notification.read}>
