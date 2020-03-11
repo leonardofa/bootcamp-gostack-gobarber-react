@@ -29,6 +29,7 @@ module.exports = {
     'react/static-property-placement': 'off',
     'react/jsx-filename-extension': ['error', { extensions: ['.jsx', '.js'] }],
     'no-console': ['error', { allow: ['tron'] }],
+    'no-underscore-dangle': ["error", { "allow": ["_id"] }]
   },
   settings: {
     "import/resolver": {
