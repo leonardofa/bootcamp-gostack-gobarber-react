@@ -24,12 +24,17 @@ module.exports = {
     'camelcase': 'off',
     'no-unused-vars': ['error', { argsIgnorePattern: 'next' }],
     'import/prefer-default-export': 'off',
+    "react/jsx-one-expression-per-line": "off",
     'react/jsx-props-no-spreading': 'off',
     'react/state-in-constructor': 'off',
     'react/static-property-placement': 'off',
     'react/jsx-filename-extension': ['error', { extensions: ['.jsx', '.js'] }],
+    "react-hooks/rules-of-hooks": "error",
+    "react-hooks/exhaustive-deps": "warn",
     'no-console': ['error', { allow: ['tron'] }],
-    'no-underscore-dangle': ["error", { "allow": ["_id"] }]
+    'no-underscore-dangle': ["error", { "allow": ["_id"] }],
+    "global-require": "off",
+    "react-native/no-raw-text": "off",
   },
   settings: {
     "import/resolver": {
