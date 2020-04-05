@@ -1,29 +1,44 @@
 import { createGlobalStyle } from 'styled-components';
 
+import 'react-perfect-scrollbar/dist/css/styles.css';
+import 'react-toastify/dist/ReactToastify.css';
+
 export default createGlobalStyle`
+
   * {
-    margin: 0; 
+    margin: 0;
     padding: 0;
     outline: 0;
-    box-sizing:border-box;
+    box-sizing: border-box;
+  }
+
+  *:focus {
+    outline:0;
   }
 
   html, body, #root {
-    min-height: 100%;
+    height: 100%;
   }
 
   body {
-    background: #7159c1;
-    -webkit-font-smoothing: antialiased !important;
+    -webkit-font-smoothing: antialiased;
   }
 
   body, input, button {
-    color:#222;
-    font-size: 14px;
-    font-family: Arial, Helvetica, sans-serif;
+    font-size: 14px ;
+    font-family: 'Roboto', sans-serif;
+  }
+
+  a {
+    text-decoration: none;
+  }
+
+  ul {
+    list-style: none;
   }
 
   button {
     cursor: pointer;
   }
+
 `;
